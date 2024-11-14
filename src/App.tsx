@@ -1,5 +1,5 @@
 import { ContactMe } from "./components/layout/ContactMe";
-import { Image } from "./components/common/image";
+import { Image } from "./components/common/Image";
 
 function App() {
   return (
