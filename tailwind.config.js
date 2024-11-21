@@ -5,11 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        host: ['"Host Grotesk"', "sans-serif"],
-        rubik: ['"Rubik"', "sans-serif"],
-        IMB: ['"IBM Plex Sans"', "sans-serif"], // Corregido el nombre de la fuente
-        DM: ['"DM Sans"', "sans-serif"], // Corregido comillas
-        sora: ['"Sora"', "sans-serif"], // Corregido comillas
+        sora: ['"Sora"', "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -20,7 +16,11 @@ export default {
         ambar: "#fcd34d",
         ambar2: "#fbbf24",
         orange: "#fb923c",
+        orange2: "#f97316",
         rose: "#e11d48",
+        rose2: "#be185d",
+        gray: "#f4f4f5",
+        slate: "#f1f5f9",
         lightRose: "#fb7185",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
