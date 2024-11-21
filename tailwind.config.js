@@ -4,6 +4,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        host: ['"Host Grotesk"', "sans-serif"],
+        rubik: ['"Rubik"', "sans-serif"],
+        IMB: ['"IBM Plex Sans"', "sans-serif"], // Corregido el nombre de la fuente
+        DM: ['"DM Sans"', "sans-serif"], // Corregido comillas
+        sora: ['"Sora"', "sans-serif"], // Corregido comillas
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
