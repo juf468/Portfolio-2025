@@ -3,7 +3,7 @@ import { Image } from "../common/Image";
 
 export const MyInformation = () => {
   const skillsText =
-    "Frontend Developer - Backend Developer - SCRUM - API Handling - API consumption - RESTful API handling - Git Flow - Github - Collaborative - CRUD - Responsive Websites - Deploy.";
+    "SCRUM - API Handling - API consumption - RESTful API handling - Git Flow - Github - Collaborative - CRUD - Responsive Websites - Deploy.";
   const phrases = skillsText.split(" - ");
 
   const TecnologiesText =
@@ -11,28 +11,23 @@ export const MyInformation = () => {
   const phrases2 = TecnologiesText.split(" - ");
 
   return (
-    <div className=" flex flex-col space-y-4 ">
+    <div className="flex flex-col space-y-8 ">
       <Image />
-      <div className="ml-20 h-auto w-[500px] rounded-md bg-slate flex-col py-4 px-4 space-y-4">
-        <span className="items-center  flex justify-center text-rose text-[40px] font-sora ">
+      <div className="ml-20 h-auto w-[500px] rounded-md bg-slate flex-col py-4 px-4 ">
+        <h1 className="items-center flex justify-center text-rose text-[40px] font-sora">
           Julia Franchi
-        </span>
-
-        <br />
-        <div className="flex  items-center justify-center space-x-12 py-4 ">
+        </h1>
+        <div className="flex items-center justify-center space-x-12 mt-4 mb-6">
           <GithubLogo size={72} color="#e11d48" />
           <LinkedinLogo size={72} color="#e11d48" />
         </div>
-        <span className="items-center  flex justify-center text-orange2 text-3xl font-sora ">
-          {" "}
-          FULLSTACK DEVELOPER{" "}
-        </span>
-
+        <h3 className="items-center flex justify-center text-orange2 text-3xl font-sora mb-6">
+          FULLSTACK DEVELOPER
+        </h3>
         <div className="font-sora py-2 px-4">
-          <span className="font-sora font-semibold text-rose text-xl ">
+          <p className="font-sora font-semibold text-rose text-xl mb-2">
             TECNOLOGIAS:
-          </span>
-          <br />
+          </p>
           {phrases2.map((phrase, index) => (
             <span key={index}>
               <span
@@ -49,12 +44,10 @@ export const MyInformation = () => {
             </span>
           ))}
         </div>
-
         <div className=" font-sora py-2 px-4">
-          <span className="font-sora font-semibold text-rose text-xl ">
+          <p className="font-sora font-semibold text-rose text-xl mb-2">
             SKILLS:
-          </span>
-          <br />
+          </p>
           {phrases.map((phrase, index) => (
             <span key={index}>
               <span
